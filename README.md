@@ -13,4 +13,4 @@ C++ゲームエンジンパーツ(一部抜粋) game-engine-components ※ソー
   - Bullet Physics (物理演算)
 - **データ形式・シリアライズ**: JsonCpp, yaml-cpp
 - **UI・その他**: Dear ImGui
-- ※ ONNX Runtimeは導入していますが処理が完成していないため除外
+※ ONNX Runtimeは導入していますが処理が完成していないため除外
