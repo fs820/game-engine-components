@@ -1,0 +1,4 @@
+C:\Users\student\source\repos\cronus\Debug\DirectML.dll
+C:\Users\student\source\repos\cronus\Debug\DirectML.pdb
+C:\Users\student\source\repos\cronus\Debug\onnxruntime.dll
+C:\Users\student\source\repos\cronus\Debug\onnxruntime_providers_shared.dll

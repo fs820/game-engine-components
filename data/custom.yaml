@@ -1,0 +1,5 @@
+# ウインドウの設定
+Window:
+  Title: Cronus # ウインドウの名前
+  Width: 1920   # ウインドウ幅
+  Height: 1080  # ウインドウ高さ

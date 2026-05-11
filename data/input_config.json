@@ -1,0 +1,34 @@
+{
+    "Keyboard":
+    {
+        "MoveForward": "W",
+        "MoveBackward": "S",
+        "MoveLeft": "A",
+        "MoveRight": "D",
+        "LookUp": "Up",
+        "LookDown": "Down",
+        "LookLeft": "Left",
+        "LookRight": "Right",
+        "Jump": "Space",
+        "Attack": "B"
+    },
+
+    "Mouse":
+    {
+        "Jump": "Right",
+        "Attack": "Left"
+    },
+
+    "Gamepad":
+    {
+        "0":
+        {
+            "MoveForward": "Up",
+            "MoveBackward": "Left",
+            "MoveLeft": "Right",
+            "MoveRight": "Down",
+            "Jump": "South",
+            "Attack": "RightTrigger"
+        }
+    }
+}
