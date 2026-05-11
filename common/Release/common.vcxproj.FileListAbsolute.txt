@@ -1,4 +1,0 @@
-C:\Users\student\source\repos\cronus\DirectML.dll
-C:\Users\student\source\repos\cronus\DirectML.pdb
-C:\Users\student\source\repos\cronus\onnxruntime.dll
-C:\Users\student\source\repos\cronus\onnxruntime_providers_shared.dll
