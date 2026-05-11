@@ -9,8 +9,9 @@ C++ゲームエンジンパーツ(一部抜粋) game-engine-components ※ソー
 - **Window / Input**: SDL3
 - **リソース管理・演算**:
   - Assimp (3Dモデル読み込み)
+  - stb_image (テクスチャのRaw展開・画像読み込み)
   - FMOD (オーディオ制御)
   - Bullet Physics (物理演算)
 - **データ形式・シリアライズ**: JsonCpp, yaml-cpp
-- **UI・その他**: Dear ImGui
+- **UI・その他**: Dear ImGui,spdlog
 ※ ONNX Runtimeは導入していますが処理が完成していないため除外
