@@ -19,16 +19,20 @@ C++ゲームエンジンパーツ(一部抜粋) game-engine-components ※ソー
 
 | ファイル | 概要・アピールポイント |
 | :--- | :--- |
+| **【SDL3を用いたWindowsとの連携】** | |
+| [`common/entry.h`](common/entry.h)<br>[`common/window.h`](common/window.h)<br>[`common/window.cpp`](common/window.cpp)<br>[`common/input.h`](common/input.h)<br>[`common/input.cpp`](common/input.cpp) | SDL3を使い手軽で安全にWindowsとの連携を行っています |
 | **【アーキテクチャ基盤】** | |
-| [`common/object.h`](common/object.h)<br>[`common/component.h`](common/component.h) | EntityとComponentの基底クラスです。スマートポインタを用いた安全な参照管理と、各コンポーネントへの処理の委譲（Update/Draw）を実装しています。 |
+| [`common/object.h`](common/object.h)<br>[`common/component.h`](common/component.h) | Component志向を実践したクラスです。スマートポインタを用いた安全な参照管理と、各コンポーネントへの処理の委譲（Update/Draw）を実装しています。 |
 | **【非同期処理・リソース管理】** | |
-| [`common/model.cpp`](common/model.cpp) | Assimpを用いた高度な3Dモデル読み込み処理です。`std::async`等を活用し、重いロード処理を非同期化する工夫を行っています。 |
-| [`common/texture.cpp`](common/texture.cpp) | stb_imageを用いたテクスチャのRaw展開処理と管理クラスです。 |
+| [`common/model.cpp`](common/model.cpp) | Assimpを用いた3Dモデル読み込み処理です。`std::async`等を活用し、重いロード処理を非同期化する工夫を行っています。 |
+| [`common/texture.cpp`](common/texture.cpp) | テクスチャの読み込み処理と管理を行うクラスです。stb_imageなどを用いてRaw展開にも対応しています |
 | **【描画・グラフィックス】** | |
-| [`common/renderer.cpp`](common/renderer.cpp) | DirectX 11の描画パイプライン全体を管理・隠蔽するクラスです。外部（ゲーム側）から扱いやすいAPI設計を心がけました。 |
-| [`data/SHADER/`](data/SHADER/) | 本プロジェクト用に記述したHLSLシェーダー群です。 |
+| [`common/renderer.cpp`](common/renderer.cpp) | DirectX 11の描画パイプライン全体を管理・隠蔽するクラスです。外部（ゲーム側）から扱いやすいAPI設計を心がけました。HDRやトゥーンなど様々なシェーダーに対応しています |
+| [`data/SHADER/`](data/SHADER/) | 本プロジェクト用に記述したHLSLシェーダー群です。hlsliなどを使い分かりやすく、使いやすくすることを心掛けました |
 | **【外部ライブラリの統合】** | |
 | [`common/physics.cpp`](common/physics.cpp) | Bullet Physics（物理演算）の複雑なセットアップと更新処理をラップし、エンジン内で扱いやすいように統合しています。 |
+| **【型/計算ライブラリの作成と依存性の分離】** | |
+| [`common/physics.cpp`](common/physics.cpp) | Vector3型などを定義し、計算関数も調べながら実装、DirectXなどに依存せずに座標管理や計算を行えます。 |
 | **【実装サンプル（ゲーム側での利用例）】** | |
 | [`game/player.cpp`](game/player.cpp) | 上記のコアシステムを実際にどう呼び出し、コンポーネントをアタッチしてゲームオブジェクトを構築しているかが分かる実装サンプルです。 |
 
