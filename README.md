@@ -48,3 +48,7 @@ C++ゲームエンジンパーツ(一部抜粋) game-engine-components ※ソー
 - **UI・その他**: Dear ImGui, spdlog
 
 ※ ONNX Runtimeは導入していますが処理が完成していないため除外
+
+## ゲームに使用した場合のイメージ
+(実際にこのコンポーネントを活用するテストを行っていた時の画像です)
+![テスト画像](image/game.png)
