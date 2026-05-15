@@ -1,7 +1,7 @@
 # 作品①
 C++ゲームエンジンパーツ(一部抜粋) game-engine-components ※ソースコードのみ、実行不可能  
-実行はできませんが、私のC++の技術や設計が最も表されているコード類です
-ゲームのコアシステムとして制作していたものの一部となります
+実行はできませんが、私のC++の技術や設計が最も表されているコード類です  
+ゲームのコアシステムとして制作していたものの一部となります  
 モダンな設計(コンポーネント指向,スマートポインタなど)や外部ライブラリなどを積極的に使った高度なモデル読み込み(読み込みでは部分的な非同期処理にもチャレンジしている)、DirectX9→11に移行してシェーダーを使った描画処理(renderer)などを盛り込んでいます
 
 ## 挑戦した技術・アピールポイント
@@ -22,7 +22,7 @@ C++ゲームエンジンパーツ(一部抜粋) game-engine-components ※ソー
 | **【SDL3を用いたWindowsとの連携】** | |
 | [`common/entry.h`](common/entry.h)<br>[`common/window.h`](common/window.h)<br>[`common/window.cpp`](common/window.cpp)<br>[`common/input.h`](common/input.h)<br>[`common/input.cpp`](common/input.cpp) | SDL3を使い手軽で安全にWindowsとの連携を行っています |
 | **【アーキテクチャ基盤】** | |
-| [`common/object.h`](common/object.h)<br>[`common/component.h`](common/component.h) | Component志向を実践したクラスです。スマートポインタを用いた安全な参照管理と、各コンポーネントへの処理の委譲（Update/Draw）を実装しています。 |
+| [`common/object.h`](common/object.h)<br>[`common/component.h`](common/component.h) | Component指向を実践したクラスです。スマートポインタを用いた安全な参照管理と、各コンポーネントへの処理の委譲（Update/Draw）を実装しています。 |
 | **【非同期処理・リソース管理】** | |
 | [`common/model.cpp`](common/model.cpp) | Assimpを用いた3Dモデル読み込み処理です。`std::async`等を活用し、重いロード処理を非同期化する工夫を行っています。 |
 | [`common/texture.cpp`](common/texture.cpp) | テクスチャの読み込み処理と管理を行うクラスです。stb_imageなどを用いてRaw展開にも対応しています |
@@ -46,4 +46,5 @@ C++ゲームエンジンパーツ(一部抜粋) game-engine-components ※ソー
   - Bullet Physics (物理演算)
 - **データ形式・シリアライズ**: JsonCpp, yaml-cpp
 - **UI・その他**: Dear ImGui, spdlog
+
 ※ ONNX Runtimeは導入していますが処理が完成していないため除外
