@@ -51,4 +51,6 @@ C++ゲームエンジンパーツ(一部抜粋) game-engine-components ※ソー
 
 ## ゲームに使用した場合のイメージ
 (実際にこのコンポーネントを活用するテストを行っていた時の画像です)
-![テスト画像](image/game_image.png)
+![テスト画像1](image/game_image_00.png)
+![テスト画像2](image/game_image_01.png)
+![テスト画像3](image/game_image_02.png)
